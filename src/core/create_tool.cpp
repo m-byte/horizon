@@ -23,6 +23,7 @@
 #include "tools/tool_edit_symbol_pin_names.hpp"
 #include "tools/tool_edit_via.hpp"
 #include "tools/tool_enter_datum.hpp"
+#include "tools/tool_fix_board.hpp"
 #include "tools/tool_import_dxf.hpp"
 #include "tools/tool_lock.hpp"
 #include "tools/tool_manage_buses.hpp"
@@ -374,6 +375,9 @@ std::unique_ptr<ToolBase> Core::create_tool(ToolID tool_id)
 
     case ToolID::SWAP_GATES:
         return std::make_unique<ToolSwapGates>(this, tool_id);
+
+    case ToolID::FIX_BOARD:
+        return std::make_unique<ToolFixBoard>(this, tool_id);
 
     default:
         return nullptr;

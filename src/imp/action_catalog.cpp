@@ -819,6 +819,10 @@ const std::map<ActionToolID, ActionCatalogItem> action_catalog = {
          {"Swap gates", ActionGroup::SCHEMATIC, ActionCatalogItem::AVAILABLE_IN_SCHEMATIC,
           ActionCatalogItem::FLAGS_DEFAULT}},
 
+        {{ActionID::TOOL, ToolID::FIX_BOARD},
+         {"Fix board", ActionGroup::BOARD, ActionCatalogItem::AVAILABLE_IN_BOARD,
+          ActionCatalogItem::FLAGS_DEFAULT}},
+
         {{ActionID::FOOTPRINT_GENERATOR, ToolID::NONE},
          {"Footprint generator", ActionGroup::PACKAGE, ActionCatalogItem::AVAILABLE_IN_PACKAGE,
           ActionCatalogItem::FLAGS_DEFAULT}},

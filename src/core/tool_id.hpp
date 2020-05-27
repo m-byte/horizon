@@ -145,5 +145,6 @@ enum class ToolID {
     RESIZE_SYMBOL,
     ROUND_OFF_VERTEX,
     SWAP_GATES,
+    FIX_BOARD,
 };
 } // namespace horizon
